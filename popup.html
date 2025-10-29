@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Network Signal Truth</title>
+  <link rel="stylesheet" href="popup.css" />
+  
+</head>
+<body>
+  <div class="card">
+    <h2>Network Signal Truth</h2>
+    <div id="status" class="muted">Checking…</div>
+
+    <div class="info-row">
+      <div class="label">Online</div><div id="online" class="value">—</div>
+    </div>
+
+    <div class="info-row">
+      <div class="label">Effective type</div><div id="effective" class="value">—</div>
+    </div>
+
+    <div class="info-row">
+      <div class="label">Downlink (Mbps)</div><div id="downlink" class="value">—</div>
+    </div>
+
+    <div class="info-row">
+      <div class="label">RTT (ms)</div><div id="rtt" class="value">—</div>
+    </div>
+
+    <div class="signal-wrap">
+      <div id="bars" class="bars">
+        <div class="bar b1"></div>
+        <div class="bar b2"></div>
+        <div class="bar b3"></div>
+        <div class="bar b4"></div>
+        <div class="bar b5"></div>
+      </div>
+      <div id="quality" class="quality">—</div>
+    </div>
+
+    <div class="controls">
+      <button id="testBtn">Run Quick Test</button>
+      <button id="liveBtn" class="ghost">Live: Off</button>
+    </div>
+  <p style="color: rgb(46, 45, 44);">Comming soon......</p>
+    <div class="controls">
+  <button >🔄 Refresh</button>
+  <button>🪟 Change Layout</button>
+</div>
+
+
+    <div id="notes" class="notes muted">
+      Uses browser network info + small latency pings. Results are an estimate.
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

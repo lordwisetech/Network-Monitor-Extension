@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Network Strength Monitor",
+  "version": "1.0",
+  "description": "Monitor your network strength in real time — always visible in Chrome's side panel.",
+  "permissions": ["sidePanel", "storage", "activeTab", "scripting", "tabs"],
+  "action": {
+    "default_title": "Open Network Monitor",
+    "default_icon": {
+      "16": "signal.png",
+      "48": "signal-tower.png",
+      "128": "network-service.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  },
+  "icons": {
+   "16": "signal.png",
+      "48": "signal-tower.png",
+      "128": "network-service.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
